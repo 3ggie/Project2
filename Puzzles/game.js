@@ -8,9 +8,6 @@ gameport.appendChild(renderer.view);
 
 var stage = new PIXI.Container();
 
-
-
-
 var Play = new PIXI.Text("Play", {font:"20px Arial", fill:"black"});
 Play.position.x = 65;
 Play.position.y = 200;
@@ -26,6 +23,49 @@ Credits.y = 240;
 var Settings = new PIXI.Text("Settings", {font:"20px Arial", fill:"black"});
 Settings.x = 95;
 Settings.y = 260;
+
+
+
+Play.interactive = true;
+Play.on('mousedown', onDownPlay);
+Play.on('touchstart', onDownPlay);
+
+
+function onDownPlay (eventData) {
+  	animatePlay();
+}
+
+
+Instructions.interactive = true;
+Instructions.on('mousedown', onDownInst);
+Instructions.on('touchstart', onDownInst);
+
+
+function onDownInst (eventData) {
+
+	  animateInstructions();
+}
+
+Credits.interactive = true;
+Credits.on('mousedown', onDownCred);
+Credits.on('touchstart', onDownCred);
+
+
+function onDownCred (eventData) {
+
+  	animateCredits();
+}
+
+Settings.interactive = true;
+Settings.on('mousedown', onDownSett);
+Settings.on('touchstart', onDownSett);
+
+
+function onDownSett (eventData) {
+
+    Settings.scale.x += 0.3;
+  	Settings.scale.y += 0.3;
+}
 
 
 
@@ -48,8 +88,9 @@ stage.addChild(Instructions);
 stage.addChild(Credits);
 stage.addChild(Settings);
 
-animate();
+
 function animate() {
 	requestAnimationFrame(animate);
 	renderer.render(stage);
 }
+animate();
