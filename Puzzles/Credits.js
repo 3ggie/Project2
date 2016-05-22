@@ -4,7 +4,7 @@
 var stageCredits = new PIXI.Container();
 
 
-var Menu = new PIXI.Text("Menu", {font:"20px Arial", fill:"black"});
+var Menu = new PIXI.Text("Menu", {font:"20px Arial", fill:"white"});
 Menu.x = 0;
 Menu.y = 0;
 
@@ -18,7 +18,7 @@ function onDownMenu (eventData) {
 
 
 
-var Credits = new PIXI.Text("Credits", {font:"20px Arial", fill:"black"});
+var Credits = new PIXI.Text("Credits", {font:"20px Arial", fill:"white"});
 Credits.x = 85;
 Credits.y = 240;
 

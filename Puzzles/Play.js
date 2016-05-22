@@ -4,7 +4,7 @@
 var stagePlay = new PIXI.Container();
 
 
-var Menu = new PIXI.Text("Menu", {font:"20px Arial", fill:"black"});
+var Menu = new PIXI.Text("Menu", {font:"20px Arial", fill:"white"});
 Menu.x = 0;
 Menu.y = 0;
 
@@ -18,7 +18,7 @@ function onDownMenu (eventData) {
 
 
 
-var Play = new PIXI.Text("Play", {font:"20px Arial", fill:"black"});
+var Play = new PIXI.Text("Play", {font:"20px Arial", fill:"white"});
 Play.position.x = 65;
 Play.position.y = 200;
 
