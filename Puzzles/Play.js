@@ -27,7 +27,7 @@ lvl1.on('mousedown', onDownlvl1);
 
 
 function onDownlvl1 (eventData) {
-    animate();
+    animatelvl1();
 
 }
 
@@ -36,11 +36,11 @@ lvl2.x = 100;
 lvl2.y = 100;
 
 lvl2.interactive = true;
-lvl2.on('mousedown', onDownMenu);
+lvl2.on('mousedown', onDownlvl2);
 
 
 function onDownlvl2 (eventData) {
-    animate();
+    animatelvl2();
 }
 
 var lvl3 = new PIXI.Text("lvl3", {font:"20px Arial", fill:"white"});
@@ -48,11 +48,11 @@ lvl3.x = 150;
 lvl3.y = 100;
 
 lvl3.interactive = true;
-lvl3.on('mousedown', onDownMenu);
+lvl3.on('mousedown', onDownlvl3);
 
 
 function onDownlvl3 (eventData) {
-    animate();
+    animatelvl3();
 }
 
 var lvl4 = new PIXI.Text("lvl4", {font:"20px Arial", fill:"white"});
@@ -60,11 +60,11 @@ lvl4.x = 200;
 lvl4.y = 100;
 
 lvl4.interactive = true;
-lvl4.on('mousedown', onDownMenu);
+lvl4.on('mousedown', onDownlvl4);
 
 
 function onDownlvl4 (eventData) {
-    animate();
+    animatelvl4();
 }
 
 var lvl5 = new PIXI.Text("lvl5", {font:"20px Arial", fill:"white"});
@@ -72,11 +72,11 @@ lvl5.x = 250;
 lvl5.y = 100;
 
 lvl5.interactive = true;
-lvl5.on('mousedown', onDownMenu);
+lvl5.on('mousedown', onDownlvl5);
 
 
 function onDownlvl5 (eventData) {
-    animate();
+    animatelvl5();
 }
 
 var lvl6 = new PIXI.Text("lvl6", {font:"20px Arial", fill:"white"});
@@ -84,11 +84,11 @@ lvl6.x = 50;
 lvl6.y = 150;
 
 lvl6.interactive = true;
-lvl6.on('mousedown', onDownMenu);
+lvl6.on('mousedown', onDownlvl6);
 
 
 function onDownlvl6 (eventData) {
-    animate();
+    animatelvl6();
 }
 
 var lvl7 = new PIXI.Text("lvl7", {font:"20px Arial", fill:"white"});
@@ -96,11 +96,11 @@ lvl7.x = 100;
 lvl7.y = 150;
 
 lvl7.interactive = true;
-lvl7.on('mousedown', onDownMenu);
+lvl7.on('mousedown', onDownlvl7);
 
 
 function onDownlvl7 (eventData) {
-    animate();
+    animatelvl7();
 }
 
 var lvl8 = new PIXI.Text("lvl8", {font:"20px Arial", fill:"white"});
@@ -108,11 +108,11 @@ lvl8.x = 150;
 lvl8.y = 150;
 
 lvl8.interactive = true;
-lvl8.on('mousedown', onDownMenu);
+lvl8.on('mousedown', onDownlvl8);
 
 
 function onDownlvl8 (eventData) {
-    animate();
+    animatelvl8();
 }
 
 var lvl9 = new PIXI.Text("lvl9", {font:"20px Arial", fill:"white"});
@@ -120,11 +120,11 @@ lvl9.x = 200;
 lvl9.y = 150;
 
 lvl9.interactive = true;
-lvl9.on('mousedown', onDownMenu);
+lvl9.on('mousedown', onDownlvl9);
 
 
 function onDownlvl9 (eventData) {
-    animate();
+    animatelvl9();
 }
 
 var lvl10 = new PIXI.Text("lvl10", {font:"20px Arial", fill:"white"});
@@ -132,11 +132,11 @@ lvl10.x = 250;
 lvl10.y = 150;
 
 lvl10.interactive = true;
-lvl10.on('mousedown', onDownMenu);
+lvl10.on('mousedown', onDownlvl10);
 
 
 function onDownlvl10 (eventData) {
-    animate();
+    animatelvl10();
 }
 
 
@@ -159,63 +159,6 @@ playSprite.anchor.y = 0.5;
 
 playSprite.position.x = 200;
 playSprite.position.y = 200;
-
-
-
-
-
-
-
-
-PIXI.SCALE_MODES.DEFAULT = PIXI.SCALE_MODES.NEAREST;
-
-PIXI.loader
-  .add("assets.json")
-  .load(ready);
-
-function ready() {
-
-   var letteri = new PIXI.Sprite(PIXI.Texture.fromFrame('alphabet9.png'), 100, 100);
-
-   letteri.anchor.x = 1;
-   letteri.anchor.y = 1;
-   letteri.position.x = 250;
-   letteri.position.y = 350;
-   var lettert = new PIXI.Sprite(PIXI.Texture.fromFrame('alphabet20.png'), 100, 100);
-   lettert.anchor.x = 1;
-   lettert.anchor.y = 1;
-   lettert.position.x = 200;
-   lettert.position.y = 350;
-
-   stagePlay.addChild(letteri);
-   stagePlay.addChild(lettert);
-
-   function mouseHandler(e) {
-
-
-     createjs.Tween.get(letteri.position).to({x: 100, y: 150}, 1000, createjs.Ease.bounceOut);
-
-
-   }
-
-   letteri.interactive = true;
-   letteri.on('mousedown', mouseHandler);
-
-
-
-   function moveT(e){
-      createjs.Tween.get(lettert.position).to({x: 150, y: 150}, 1000, createjs.Ease.bounceOut);
-   }
-
-   lettert.interactive = true;
-   lettert.on('mousedown', moveT);
-
-}
-
-
-
-
-
 
 
 
