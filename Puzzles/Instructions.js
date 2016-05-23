@@ -24,18 +24,20 @@ Instructions.y = 220;
 
 
 
-//Beach Sprite
-var beach = new PIXI.Texture.fromImage("Instructions.png");
-var beachSprite = new PIXI.Sprite(beach);
+//Inst Sprite
+var Inst = new PIXI.Texture.fromImage("Instructions.png");
+var InstSprite = new PIXI.Sprite(Inst);
 
-beachSprite.anchor.x = 0.5;
-beachSprite.anchor.y = 0.5;
+InstSprite.anchor.x = 0.5;
+InstSprite.anchor.y = 0.5;
 
-beachSprite.position.x = 200;
-beachSprite.position.y = 200;
+InstSprite.position.x = 200;
+InstSprite.position.y = 200;
+
+
 
 //Container that holds my elements
-stageInstructions.addChild(beachSprite);
+stageInstructions.addChild(InstSprite);
 stageInstructions.addChild(Instructions);
 stageInstructions.addChild(Menu);
 

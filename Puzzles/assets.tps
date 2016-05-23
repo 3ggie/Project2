@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>4.2.1</string>
         <key>fileName</key>
-        <string>C:/Users/3ggie/Documents/assets.tps</string>
+        <string>C:/Users/3ggie/Desktop/alpha/assets.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -28,7 +28,7 @@
             </struct>
         </array>
         <key>allowRotation</key>
-        <false/>
+        <true/>
         <key>shapeDebug</key>
         <false/>
         <key>dpi</key>
@@ -141,7 +141,7 @@
             <key>data</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename></filename>
+                <filename>assets.json</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -158,7 +158,7 @@
             <string></string>
         </struct>
         <key>autoAliasEnabled</key>
-        <false/>
+        <true/>
         <key>trimSpriteNames</key>
         <false/>
         <key>prependSmartFolderName</key>
@@ -188,32 +188,32 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">../Desktop/alphabet/alphabet1.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet10.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet11.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet12.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet13.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet14.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet15.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet16.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet17.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet18.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet19.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet2.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet20.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet21.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet22.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet23.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet24.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet25.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet26.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet3.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet4.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet5.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet6.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet7.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet8.png</key>
-            <key type="filename">../Desktop/alphabet/alphabet9.png</key>
+            <key type="filename">../alphabet/alphabet1.png</key>
+            <key type="filename">../alphabet/alphabet10.png</key>
+            <key type="filename">../alphabet/alphabet11.png</key>
+            <key type="filename">../alphabet/alphabet12.png</key>
+            <key type="filename">../alphabet/alphabet13.png</key>
+            <key type="filename">../alphabet/alphabet14.png</key>
+            <key type="filename">../alphabet/alphabet15.png</key>
+            <key type="filename">../alphabet/alphabet16.png</key>
+            <key type="filename">../alphabet/alphabet17.png</key>
+            <key type="filename">../alphabet/alphabet18.png</key>
+            <key type="filename">../alphabet/alphabet19.png</key>
+            <key type="filename">../alphabet/alphabet2.png</key>
+            <key type="filename">../alphabet/alphabet20.png</key>
+            <key type="filename">../alphabet/alphabet21.png</key>
+            <key type="filename">../alphabet/alphabet22.png</key>
+            <key type="filename">../alphabet/alphabet23.png</key>
+            <key type="filename">../alphabet/alphabet24.png</key>
+            <key type="filename">../alphabet/alphabet25.png</key>
+            <key type="filename">../alphabet/alphabet26.png</key>
+            <key type="filename">../alphabet/alphabet3.png</key>
+            <key type="filename">../alphabet/alphabet4.png</key>
+            <key type="filename">../alphabet/alphabet5.png</key>
+            <key type="filename">../alphabet/alphabet6.png</key>
+            <key type="filename">../alphabet/alphabet7.png</key>
+            <key type="filename">../alphabet/alphabet8.png</key>
+            <key type="filename">../alphabet/alphabet9.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -221,32 +221,32 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>../Desktop/alphabet/alphabet3.png</filename>
-            <filename>../Desktop/alphabet/alphabet4.png</filename>
-            <filename>../Desktop/alphabet/alphabet5.png</filename>
-            <filename>../Desktop/alphabet/alphabet6.png</filename>
-            <filename>../Desktop/alphabet/alphabet7.png</filename>
-            <filename>../Desktop/alphabet/alphabet8.png</filename>
-            <filename>../Desktop/alphabet/alphabet9.png</filename>
-            <filename>../Desktop/alphabet/alphabet10.png</filename>
-            <filename>../Desktop/alphabet/alphabet11.png</filename>
-            <filename>../Desktop/alphabet/alphabet12.png</filename>
-            <filename>../Desktop/alphabet/alphabet13.png</filename>
-            <filename>../Desktop/alphabet/alphabet14.png</filename>
-            <filename>../Desktop/alphabet/alphabet15.png</filename>
-            <filename>../Desktop/alphabet/alphabet16.png</filename>
-            <filename>../Desktop/alphabet/alphabet17.png</filename>
-            <filename>../Desktop/alphabet/alphabet18.png</filename>
-            <filename>../Desktop/alphabet/alphabet19.png</filename>
-            <filename>../Desktop/alphabet/alphabet20.png</filename>
-            <filename>../Desktop/alphabet/alphabet21.png</filename>
-            <filename>../Desktop/alphabet/alphabet22.png</filename>
-            <filename>../Desktop/alphabet/alphabet23.png</filename>
-            <filename>../Desktop/alphabet/alphabet24.png</filename>
-            <filename>../Desktop/alphabet/alphabet25.png</filename>
-            <filename>../Desktop/alphabet/alphabet26.png</filename>
-            <filename>../Desktop/alphabet/alphabet1.png</filename>
-            <filename>../Desktop/alphabet/alphabet2.png</filename>
+            <filename>../alphabet/alphabet5.png</filename>
+            <filename>../alphabet/alphabet6.png</filename>
+            <filename>../alphabet/alphabet7.png</filename>
+            <filename>../alphabet/alphabet8.png</filename>
+            <filename>../alphabet/alphabet9.png</filename>
+            <filename>../alphabet/alphabet10.png</filename>
+            <filename>../alphabet/alphabet11.png</filename>
+            <filename>../alphabet/alphabet12.png</filename>
+            <filename>../alphabet/alphabet13.png</filename>
+            <filename>../alphabet/alphabet14.png</filename>
+            <filename>../alphabet/alphabet15.png</filename>
+            <filename>../alphabet/alphabet16.png</filename>
+            <filename>../alphabet/alphabet17.png</filename>
+            <filename>../alphabet/alphabet18.png</filename>
+            <filename>../alphabet/alphabet19.png</filename>
+            <filename>../alphabet/alphabet20.png</filename>
+            <filename>../alphabet/alphabet21.png</filename>
+            <filename>../alphabet/alphabet22.png</filename>
+            <filename>../alphabet/alphabet23.png</filename>
+            <filename>../alphabet/alphabet24.png</filename>
+            <filename>../alphabet/alphabet25.png</filename>
+            <filename>../alphabet/alphabet26.png</filename>
+            <filename>../alphabet/alphabet1.png</filename>
+            <filename>../alphabet/alphabet2.png</filename>
+            <filename>../alphabet/alphabet3.png</filename>
+            <filename>../alphabet/alphabet4.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

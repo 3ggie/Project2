@@ -18,36 +18,20 @@ function onDownMenu (eventData) {
 
 
 
-var Credits = new PIXI.Text("Credits", {font:"20px Arial", fill:"white"});
-Credits.x = 85;
-Credits.y = 240;
 
-Credits.interactive = true;
-Credits.on('mousedown', onDownCred);
-Credits.on('touchstart', onDownCred);
+//Credits Sprite
+var Credits = new PIXI.Texture.fromImage("CreditsB.png");
+var CreditsSprite = new PIXI.Sprite(Credits);
 
+CreditsSprite.anchor.x = 0.5;
+CreditsSprite.anchor.y = 0.5;
 
-function onDownCred (eventData) {
-
-    Credits.scale.x += 0.3;
-    Credits.scale.y += 0.3;
-}
-
-
-
-//Beach Sprite
-var beach = new PIXI.Texture.fromImage("beach.png");
-var beachSprite = new PIXI.Sprite(beach);
-
-beachSprite.anchor.x = 0.5;
-beachSprite.anchor.y = 0.5;
-
-beachSprite.position.x = 200;
-beachSprite.position.y = 200;
+CreditsSprite.position.x = 200;
+CreditsSprite.position.y = 200;
 
 //Container that holds my elements
-stageCredits.addChild(beachSprite);
-stageCredits.addChild(Credits);
+stageCredits.addChild(CreditsSprite);
+
 stageCredits.addChild(Menu);
 
 

@@ -1,7 +1,7 @@
 
 /*Creating global variables, stages, and staging*/
 
-var stagePlay = new PIXI.Container();
+var stagelvl1 = new PIXI.Container();
 
 
 
@@ -27,7 +27,7 @@ lvl1.on('mousedown', onDownlvl1);
 
 
 function onDownlvl1 (eventData) {
-    animate();
+    animatelvl1();
 
 }
 
@@ -187,8 +187,8 @@ function ready() {
    lettert.position.x = 200;
    lettert.position.y = 350;
 
-   stagePlay.addChild(letteri);
-   stagePlay.addChild(lettert);
+   stagelvl1.addChild(letteri);
+   stagelvl1.addChild(lettert);
 
    function mouseHandler(e) {
 
@@ -225,7 +225,7 @@ function ready() {
     letter.position.x = 200;
     letter.position.y = 350;
     alphaArray.push(letter);
-    stagePlay.addChild(letter);
+    stagelvl1.addChild(letter);
   }*/
 
 
@@ -235,22 +235,22 @@ function ready() {
 
 
 //Container that holds my elements
-stagePlay.addChild(playSprite);
-stagePlay.addChild(Menu);
-stagePlay.addChild(lvl1);
-stagePlay.addChild(lvl2);
-stagePlay.addChild(lvl3);
-stagePlay.addChild(lvl4);
-stagePlay.addChild(lvl5);
-stagePlay.addChild(lvl6);
-stagePlay.addChild(lvl7);
-stagePlay.addChild(lvl8);
-stagePlay.addChild(lvl9);
-stagePlay.addChild(lvl10);
+stagelvl1.addChild(playSprite);
+stagelvl1.addChild(Menu);
+stagelvl1.addChild(lvl1);
+stagelvl1.addChild(lvl2);
+stagelvl1.addChild(lvl3);
+stagelvl1.addChild(lvl4);
+stagelvl1.addChild(lvl5);
+stagelvl1.addChild(lvl6);
+stagelvl1.addChild(lvl7);
+stagelvl1.addChild(lvl8);
+stagelvl1.addChild(lvl9);
+stagelvl1.addChild(lvl10);
 
 
-function animatePlay() {
-	requestAnimationFrame(animatePlay);
-	renderer.render(stagePlay);
+function animatelvl1() {
+	requestAnimationFrame(animatelvl1);
+	renderer.render(stagelvl1);
 }
-animatePlay();
+animatelvl1();

@@ -8,6 +8,7 @@ gameport.appendChild(renderer.view);
 
 var stage = new PIXI.Container();
 
+
 var Play = new PIXI.Text("Play", {font:"20px Arial", fill:"white"});
 Play.position.x = 65;
 Play.position.y = 200;
@@ -63,8 +64,7 @@ Settings.on('touchstart', onDownSett);
 
 function onDownSett (eventData) {
 
-    Settings.scale.x += 0.3;
-  	Settings.scale.y += 0.3;
+    animateSettings();
 }
 
 
@@ -72,7 +72,7 @@ function onDownSett (eventData) {
 
 
 //orange Sprite
-var orange = new PIXI.Texture.fromImage("orange.png");
+var orange = new PIXI.Texture.fromImage("swagaram.png");
 var orangeSprite = new PIXI.Sprite(orange);
 
 orangeSprite.anchor.x = 0.5;
