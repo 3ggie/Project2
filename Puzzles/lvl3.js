@@ -22,6 +22,7 @@ Menu.on('mousedown', onDownMenu);
 
 
 function onDownMenu (eventData) {
+  menu.play();
     animate();
 }
 
@@ -36,6 +37,7 @@ next.on('mousedown', nextlevel);
 
 
 function nextlevel (eventData) {
+  traverse.play();
     animatelvl4();
 }
 
@@ -48,6 +50,7 @@ back.on('mousedown', backlevel);
 
 
 function backlevel (eventData) {
+  traverse.play();
     animatelvl2();
 }
 
@@ -119,6 +122,7 @@ stage3.addChild(back);
 
 
 function moveh(e){
+  sound.play()
    createjs.Tween.get(hSprite.position).to({x: 100, y: 200}, 1000, createjs.Ease.bounceOut);
 }
 
@@ -128,12 +132,14 @@ hSprite.on('mousedown', moveh);
 
 
 function movee(e){
+  sound.play();
    createjs.Tween.get(e3Sprite.position).to({x: 150, y: 200}, 1000, createjs.Ease.bounceOut);
 }
 e3Sprite.interactive = true;
 e3Sprite.on('mousedown', movee);
 
 function movel(e){
+  sound.play();
    createjs.Tween.get(lSprite.position).to({x: 200, y: 200}, 1000, createjs.Ease.bounceOut);
 }
 lSprite.interactive = true;
@@ -141,6 +147,7 @@ lSprite.on('mousedown', movel);
 
 
 function movel2(e){
+  sound.play();
    createjs.Tween.get(l2Sprite.position).to({x: 250, y: 200}, 1000, createjs.Ease.bounceOut);
 }
 l2Sprite.interactive = true;
@@ -148,6 +155,7 @@ l2Sprite.on('mousedown', movel2);
 
 
 function moveo(e){
+  sound.play();
    createjs.Tween.get(o3Sprite.position).to({x: 300, y: 200}, 1000, createjs.Ease.bounceOut);
 }
 o3Sprite.interactive = true;

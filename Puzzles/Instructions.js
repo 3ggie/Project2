@@ -13,6 +13,7 @@ Menu.on('mousedown', onDownMenu);
 Menu.on('touchstart', onDownMenu);
 
 function onDownMenu (eventData) {
+  menu.play();
     animate();
 }
 

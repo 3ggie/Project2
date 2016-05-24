@@ -9,21 +9,18 @@ gameport.appendChild(renderer.view);
 var stage = new PIXI.Container();
 
 
-var Play = new PIXI.Text("Play", {font:"20px Arial", fill:"white"});
-Play.position.x = 65;
+var Play = new PIXI.Text("Play", {font:"30px Arial", fill:"white"});
+Play.position.x = 100;
 Play.position.y = 200;
 
-var Instructions = new PIXI.Text("How To Play", {font:"20px Arial", fill:"white"});
-Instructions.x = 75;
-Instructions.y = 220;
+var Instructions = new PIXI.Text("How To Play", {font:"30px Arial", fill:"white"});
+Instructions.x = 100;
+Instructions.y = 250;
 
-var Credits = new PIXI.Text("Credits", {font:"20px Arial", fill:"white"});
-Credits.x = 85;
-Credits.y = 240;
+var Credits = new PIXI.Text("Credits", {font:"30px Arial", fill:"white"});
+Credits.x = 100;
+Credits.y = 300;
 
-var Settings = new PIXI.Text("Settings", {font:"20px Arial", fill:"white"});
-Settings.x = 95;
-Settings.y = 260;
 
 
 
@@ -33,6 +30,7 @@ Play.on('touchstart', onDownPlay);
 
 
 function onDownPlay (eventData) {
+    sound1.play();
   	animatePlay();
 }
 
@@ -43,7 +41,7 @@ Instructions.on('touchstart', onDownInst);
 
 
 function onDownInst (eventData) {
-
+    sound1.play();
 	  animateInstructions();
 }
 
@@ -53,18 +51,8 @@ Credits.on('touchstart', onDownCred);
 
 
 function onDownCred (eventData) {
-
+    sound1.play();
   	animateCredits();
-}
-
-Settings.interactive = true;
-Settings.on('mousedown', onDownSett);
-Settings.on('touchstart', onDownSett);
-
-
-function onDownSett (eventData) {
-
-    animateSettings();
 }
 
 
@@ -86,7 +74,7 @@ stage.addChild(orangeSprite);
 stage.addChild(Play);
 stage.addChild(Instructions);
 stage.addChild(Credits);
-stage.addChild(Settings);
+
 
 
 function animate() {

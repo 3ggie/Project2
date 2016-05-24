@@ -22,6 +22,7 @@ Menu.on('mousedown', onDownMenu);
 
 
 function onDownMenu (eventData) {
+  menu.play();
     animate();
 }
 
@@ -35,6 +36,7 @@ back.on('mousedown', backlevel);
 
 
 function backlevel (eventData) {
+    traverse.play();
     animatelvl5();
 }
 
@@ -137,6 +139,7 @@ stage6.addChild(back);
 
 
 function movet(e){
+  sound.play();
    createjs.Tween.get(tSprite.position).to({x: 50, y: 200}, 1000, createjs.Ease.bounceOut);
 }
 
@@ -144,6 +147,7 @@ tSprite.interactive = true;
 tSprite.on('mousedown', movet);
 
 function moveo(e){
+  sound.play();
    createjs.Tween.get(o6Sprite.position).to({x: 100, y: 200}, 1000, createjs.Ease.bounceOut);
 }
 
@@ -151,6 +155,7 @@ o6Sprite.interactive = true;
 o6Sprite.on('mousedown', moveo);
 
 function movee(e){
+  sound.play();
    createjs.Tween.get(e6Sprite.position).to({x: 150, y: 200}, 1000, createjs.Ease.bounceOut);
 }
 
@@ -158,6 +163,7 @@ e6Sprite.interactive = true;
 e6Sprite.on('mousedown', movee);
 
 function moven(e){
+  sound.play();
    createjs.Tween.get(n6Sprite.position).to({x: 200, y: 200}, 1000, createjs.Ease.bounceOut);
 }
 
@@ -165,6 +171,7 @@ n6Sprite.interactive = true;
 n6Sprite.on('mousedown', moven);
 
 function movea(e){
+  sound.play();
    createjs.Tween.get(a6Sprite.position).to({x: 250, y: 200}, 1000, createjs.Ease.bounceOut);
 }
 
@@ -173,6 +180,7 @@ a6Sprite.on('mousedown', movea);
 
 
 function movei(e){
+  sound.play();
    createjs.Tween.get(i6Sprite.position).to({x: 300, y: 200}, 1000, createjs.Ease.bounceOut);
 }
 
@@ -180,6 +188,7 @@ i6Sprite.interactive = true;
 i6Sprite.on('mousedown', movei);
 
 function movel(e){
+  sound.play();
    createjs.Tween.get(l6Sprite.position).to({x: 350, y: 200}, 1000, createjs.Ease.bounceOut);
 }
 
@@ -187,6 +196,7 @@ l6Sprite.interactive = true;
 l6Sprite.on('mousedown', movel);
 
 function moves(e){
+  sound.play();
    createjs.Tween.get(s6Sprite.position).to({x: 400, y: 200}, 1000, createjs.Ease.bounceOut);
 }
 

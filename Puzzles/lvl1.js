@@ -5,7 +5,6 @@ var stage1 = new PIXI.Container();
 
 
 
-
 var Menu = new PIXI.Text("Menu", {font:"20px Arial", fill:"white"});
 Menu.x = 0;
 Menu.y = 0;
@@ -15,8 +14,23 @@ Menu.on('mousedown', onDownMenu);
 
 
 function onDownMenu (eventData) {
+  menu.play();
     animate();
 }
+
+var back = new PIXI.Text("Go Back", {font:"20px Arial", fill:"white"});
+back.x = 0;
+back.y = 50;
+
+back.interactive = true;
+back.on('mousedown', backlevel);
+
+
+function backlevel (eventData) {
+  traverse.play();
+    animatePlay();
+}
+
 
 
 var level = new PIXI.Text("LEVEL 1", {font:"20px Arial", fill:"white"});
@@ -34,6 +48,7 @@ next.on('mousedown', nextlevel);
 
 
 function nextlevel (eventData) {
+  traverse.play();
     animatelvl2();
 }
 
@@ -63,11 +78,27 @@ PIXI.SCALE_MODES.DEFAULT = PIXI.SCALE_MODES.NEAREST;
 
 PIXI.loader
   .add("assets.json")
+  .add("MoveLetters.wav")
+  .add("Select.wav")
+  .add("Level.wav")
+  .add("Traverse.wav")
+  .add("Menu.wav")
   .load(ready);
 
 
-
+var sound;
+var sound1;
+var sound2;
+var traverse;
+var menu
 function ready() {
+  sound = PIXI.audioManager.getAudio("MoveLetters.wav");
+  sound1 = PIXI.audioManager.getAudio("Select.wav");
+  sound2 = PIXI.audioManager.getAudio("Level.wav");
+  traverse = PIXI.audioManager.getAudio("Traverse.wav");
+  menu = PIXI.audioManager.getAudio("Menu.wav");
+
+
 
    var letterh = new PIXI.Sprite(PIXI.Texture.fromFrame('alphabet8.png'), 100, 100);
 
@@ -87,7 +118,9 @@ function ready() {
    function mouseHandler(e) {
 
 
+
      createjs.Tween.get(letterh.position).to({x: 100, y: 200}, 1000, createjs.Ease.bounceOut);
+     sound.play();
 
 
    }
@@ -98,7 +131,9 @@ function ready() {
 
 
    function moveT(e){
+
       createjs.Tween.get(letteri.position).to({x: 150, y: 200}, 1000, createjs.Ease.bounceOut);
+      sound.play();
    }
 
    letteri.interactive = true;
@@ -133,6 +168,7 @@ stage1.addChild(playSprite);
 stage1.addChild(Menu);
 stage1.addChild(level);
 stage1.addChild(next);
+stage1.addChild(back);
 
 
 
