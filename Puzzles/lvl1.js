@@ -25,6 +25,20 @@ level.x = 150;
 level.y = 100;
 
 
+var next = new PIXI.Text("Next LEVEL", {font:"20px Arial", fill:"white"});
+next.x = 290;
+
+
+next.interactive = true;
+next.on('mousedown', nextlevel);
+
+
+function nextlevel (eventData) {
+    animatelvl2();
+}
+
+
+
 
 
 
@@ -118,6 +132,7 @@ function ready() {
 stage1.addChild(playSprite);
 stage1.addChild(Menu);
 stage1.addChild(level);
+stage1.addChild(next);
 
 
 

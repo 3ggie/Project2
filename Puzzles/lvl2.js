@@ -27,6 +27,33 @@ function onDownMenu (eventData) {
 
 
 
+var next = new PIXI.Text("Next LEVEL", {font:"20px Arial", fill:"white"});
+next.x = 290;
+
+
+next.interactive = true;
+next.on('mousedown', nextlevel);
+
+
+function nextlevel (eventData) {
+    animatelvl3();
+}
+
+
+var back = new PIXI.Text("Go Back", {font:"20px Arial", fill:"white"});
+back.x = 0;
+back.y = 50;
+
+back.interactive = true;
+back.on('mousedown', backlevel);
+
+
+function backlevel (eventData) {
+    animatelvl1();
+}
+
+
+
 
 var level = new PIXI.Text("LEVEL 2", {font:"20px Arial", fill:"white"});
 
@@ -44,22 +71,22 @@ iSprite.anchor.y = 1;
 iSprite.position.x = 300;
 iSprite.position.y = 350;
 
-var b = new PIXI.Texture.fromImage("alpha/alphabet2.png");
-var bSprite = new PIXI.Sprite(b);
+var b1 = new PIXI.Texture.fromImage("alpha/alphabet2.png");
+var b1Sprite = new PIXI.Sprite(b1);
 
-bSprite.anchor.x = 1;
-bSprite.anchor.y = 1;
-bSprite.position.x = 250;
-bSprite.position.y = 350;
+b1Sprite.anchor.x = 1;
+b1Sprite.anchor.y = 1;
+b1Sprite.position.x = 250;
+b1Sprite.position.y = 350;
 
 
-var g = new PIXI.Texture.fromImage("alpha/alphabet7.png");
-var gSprite = new PIXI.Sprite(g);
+var g1 = new PIXI.Texture.fromImage("alpha/alphabet7.png");
+var g1Sprite = new PIXI.Sprite(g1);
 
-gSprite.anchor.x = 1;
-gSprite.anchor.y = 1;
-gSprite.position.x = 200;
-gSprite.position.y = 350;
+g1Sprite.anchor.x = 1;
+g1Sprite.anchor.y = 1;
+g1Sprite.position.x = 200;
+g1Sprite.position.y = 350;
 
 
 
@@ -68,8 +95,10 @@ stage2.addChild(playSprite);
 stage2.addChild(Menu);
 stage2.addChild(level);
 stage2.addChild(iSprite);
-stage2.addChild(bSprite);
-stage2.addChild(gSprite);
+stage2.addChild(b1Sprite);
+stage2.addChild(g1Sprite);
+stage2.addChild(next);
+stage2.addChild(back);
 
    function movei(e){
       createjs.Tween.get(iSprite.position).to({x: 200, y: 200}, 1000, createjs.Ease.bounceOut);
@@ -80,19 +109,19 @@ stage2.addChild(gSprite);
 
 
 
-   function moveg(e){
-      createjs.Tween.get(gSprite.position).to({x: 250, y: 200}, 1000, createjs.Ease.bounceOut);
+   function moveg1(e){
+      createjs.Tween.get(g1Sprite.position).to({x: 250, y: 200}, 1000, createjs.Ease.bounceOut);
    }
 
-   gSprite.interactive = true;
-   gSprite.on('mousedown', moveg);
+   g1Sprite.interactive = true;
+   g1Sprite.on('mousedown', moveg1);
 
-   function moveb(e){
-      createjs.Tween.get(bSprite.position).to({x: 150, y: 200}, 1000, createjs.Ease.bounceOut);
+   function moveb1(e){
+      createjs.Tween.get(b1Sprite.position).to({x: 150, y: 200}, 1000, createjs.Ease.bounceOut);
    }
 
-   bSprite.interactive = true;
-   bSprite.on('mousedown', moveb);
+   b1Sprite.interactive = true;
+   b1Sprite.on('mousedown', moveb1);
 
 
 
